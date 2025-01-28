@@ -21,17 +21,17 @@ const menuCategories = [
         name: "Apricot Delight", 
         price: 249, 
         isBestseller: true,
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/be67eff4-9d8f-4988-8c1f-74ef100f8637.png"
       },
       { 
         name: "Chocolate Dream Cake", 
         price: 249,
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/3b5661d9-52f5-413e-98ae-b7099d2a101c.png"
       },
       { 
         name: "Passion Delight", 
         price: 249,
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/eda170b8-175d-48dc-ade3-879100189cfd.png"
       },
     ]
   },
@@ -41,12 +41,12 @@ const menuCategories = [
       { 
         name: "Blueberry Cheese Cake Tub", 
         price: 249,
-        image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d"
+        image: "/lovable-uploads/49836021-05a6-46c5-8fa6-44ba4cd72a25.png"
       },
       { 
         name: "Nutella Cheese Cake Tub", 
         price: 249,
-        image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d"
+        image: "/lovable-uploads/847c85d8-b578-4b3b-80ca-f7629eb9c890.png"
       },
     ]
   },
@@ -57,13 +57,13 @@ const menuCategories = [
         name: "Biscoff Jar Cake", 
         price: 239, 
         description: "A decadent dessert that features layers of rich cake and creamy filling",
-        image: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1"
+        image: "/lovable-uploads/98e13d02-0a1b-474a-977b-58fb3ebfd0e5.png"
       },
       { 
         name: "Chocolate Fudge Jar Cake", 
         price: 239, 
         description: "A decadent dessert that features three layers of rich chocolate cake, creamy chocolate",
-        image: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1"
+        image: "/lovable-uploads/8b36bfca-a88f-47b5-956b-c8325fef98c1.png"
       },
     ]
   },
@@ -74,12 +74,12 @@ const menuCategories = [
         name: "Brownie", 
         price: 129, 
         description: "Indulge in a rich and decadent delight that satisfies your sweet tooth",
-        image: "https://images.unsplash.com/photo-1501286353178-1ec881214838"
+        image: "/lovable-uploads/3b5661d9-52f5-413e-98ae-b7099d2a101c.png"
       },
       { 
         name: "Choco Lava", 
         price: 149,
-        image: "https://images.unsplash.com/photo-1501286353178-1ec881214838"
+        image: "/lovable-uploads/be67eff4-9d8f-4988-8c1f-74ef100f8637.png"
       },
     ]
   },
@@ -90,30 +90,30 @@ const menuCategories = [
         name: "Blue Hawaii", 
         price: 229, 
         description: "Indulge in the refreshing and tropical flavors of this vibrant Blue Bubble Tea",
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/9607bfeb-bf16-48e2-a5be-69d350b7835a.png"
       },
       { 
         name: "Cookies & Cream", 
         price: 229, 
         isBestseller: true, 
         description: "Indulge in a creamy and delightful treat with our Cookies n Cream Bubble",
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/43b79337-03e0-4ae6-ac41-1be7af806864.png"
       },
       { 
         name: "Green Melon", 
         price: 229,
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/e8edd06b-c5d7-4fce-bf37-fd44de98095b.png"
       },
       { 
         name: "Irish Cream", 
         price: 229,
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/c7811e23-ec25-4b17-806b-ddc67c73e935.png"
       },
       { 
         name: "Nutty Taro", 
         price: 229, 
         description: "Indulge in the creamy and nutty delight of this tantalizing bubble tea.",
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
+        image: "/lovable-uploads/2294fa48-a11b-45de-90dd-b22eda7c51f5.png"
       },
     ]
   },
@@ -145,17 +145,17 @@ const menuCategories = [
 
 const showcaseItems = [
   {
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9",
+    image: "/lovable-uploads/8e0436c5-6b41-4e3f-932b-fad856248279.png",
     title: "Birthday Theme Cake",
     description: "Perfect for your special day"
   },
   {
-    image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d",
+    image: "/lovable-uploads/4663abdd-1c83-4677-b1e8-ba9567a850c5.png",
     title: "Halloween Theme Cake",
     description: "Spooky and delicious"
   },
   {
-    image: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1",
+    image: "/lovable-uploads/812a8a53-6184-469b-a2b4-2cf847a0ff67.png",
     title: "Butterfly Theme Cake",
     description: "Elegant and beautiful"
   }
