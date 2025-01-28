@@ -5,6 +5,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const menuCategories = [
   {
@@ -87,6 +94,24 @@ const menuCategories = [
   },
 ];
 
+const showcaseItems = [
+  {
+    image: "/lovable-uploads/8e0436c5-6b41-4e3f-932b-fad856248279.png",
+    title: "Birthday Theme Cake",
+    description: "Perfect for your special day"
+  },
+  {
+    image: "/lovable-uploads/4663abdd-1c83-4677-b1e8-ba9567a850c5.png",
+    title: "Halloween Theme Cake",
+    description: "Spooky and delicious"
+  },
+  {
+    image: "/lovable-uploads/812a8a53-6184-469b-a2b4-2cf847a0ff67.png",
+    title: "Butterfly Theme Cake",
+    description: "Elegant and beautiful"
+  }
+];
+
 const Menu = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -116,6 +141,42 @@ const Menu = () => {
             </Button>
           </div>
         </div>
+
+        {/* Showcase Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-serif mb-8 text-center text-gradient">Featured Items</h2>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent>
+              {showcaseItems.map((item, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Card className="overflow-hidden">
+                      <div className="aspect-square relative">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                      <CardHeader>
+                        <CardTitle className="text-xl">{item.title}</CardTitle>
+                        <p className="text-muted-foreground">{item.description}</p>
+                      </CardHeader>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </section>
 
         <div className="space-y-12">
           {menuCategories.map((category) => (

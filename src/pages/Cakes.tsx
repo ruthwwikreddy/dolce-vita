@@ -4,6 +4,31 @@ import { Footer } from "@/components/Footer";
 import { Contact } from "@/components/Contact";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, CakeSlice, Instagram } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+const showcaseItems = [
+  {
+    image: "/lovable-uploads/de25b59a-b5fe-4464-b763-e37f7f411f7e.png",
+    title: "Macaron Theme Cake",
+    description: "Elegant and sophisticated"
+  },
+  {
+    image: "/lovable-uploads/c75e589d-1899-4e80-891e-d77969d47e8e.png",
+    title: "Gender Reveal Cake",
+    description: "Perfect for your special moment"
+  },
+  {
+    image: "/lovable-uploads/3627ffc2-1920-4989-9e52-e4fffdc44836.png",
+    title: "Traditional Theme Cake",
+    description: "Classic and timeless"
+  }
+];
 
 const cakes = [
   {
@@ -93,6 +118,42 @@ const Cakes = () => {
             </Button>
           </div>
         </div>
+
+        {/* Showcase Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-serif mb-8 text-center text-gradient">Featured Cakes</h2>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent>
+              {showcaseItems.map((item, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Card className="overflow-hidden">
+                      <div className="aspect-square relative">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
+                      <CardHeader>
+                        <CardTitle className="text-xl">{item.title}</CardTitle>
+                        <p className="text-muted-foreground">{item.description}</p>
+                      </CardHeader>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </section>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {cakes.map((category) => (
