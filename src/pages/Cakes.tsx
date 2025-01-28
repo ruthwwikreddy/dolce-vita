@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Contact } from "@/components/Contact";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, CakeSlice, Instagram } from "lucide-react";
 
@@ -125,6 +126,7 @@ const Cakes = () => {
           ))}
         </div>
       </main>
+      <Contact />
       <Footer />
     </div>
   );

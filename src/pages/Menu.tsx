@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Contact } from "@/components/Contact";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
@@ -148,6 +149,7 @@ const Menu = () => {
           ))}
         </div>
       </main>
+      <Contact />
       <Footer />
     </div>
   );
