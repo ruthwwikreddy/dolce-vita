@@ -117,6 +117,30 @@ const menuCategories = [
       },
     ]
   },
+  {
+    title: "Pastries",
+    items: [
+      { name: "Croissant", price: 89 },
+      { name: "Danish", price: 79 },
+      { name: "Muffin", price: 69 }
+    ]
+  },
+  {
+    title: "Hot Beverages",
+    items: [
+      { name: "Espresso", price: 129 },
+      { name: "Cappuccino", price: 149 },
+      { name: "Hot Chocolate", price: 139 }
+    ]
+  },
+  {
+    title: "Cold Beverages",
+    items: [
+      { name: "Iced Latte", price: 159 },
+      { name: "Cold Brew", price: 169 },
+      { name: "Frappe", price: 179 }
+    ]
+  }
 ];
 
 const showcaseItems = [
@@ -253,3 +277,4 @@ const Menu = () => {
 };
 
 export default Menu;
+
