@@ -1,5 +1,5 @@
 
-import { Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { Instagram, MapPin, Phone, Mail, ExternalLink } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -48,6 +48,16 @@ export const Contact = () => {
                   <Instagram className="w-5 h-5" />
                   <span>Follow us on Instagram</span>
                 </a>
+                <div className="pt-4 border-t">
+                  <a
+                    href="https://ruthwikreddy.xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                  >
+                    Made by Ruthwik Reddy <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -56,3 +66,4 @@ export const Contact = () => {
     </section>
   );
 };
+
