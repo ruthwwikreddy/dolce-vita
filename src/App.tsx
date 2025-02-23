@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Index from "./pages/Index";
 import Cakes from "./pages/Cakes";
 import Menu from "./pages/Menu";
+import { Navigation } from "./components/Navigation";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Navigation />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cakes" element={<Cakes />} />
