@@ -33,7 +33,7 @@ export const Contact = () => {
                 </p>
                 <p className="flex items-center gap-2">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">+91 XXXXXXXXXX</span>
+                  <span className="text-muted-foreground">+91 9346403033</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <Mail className="w-5 h-5 text-primary" />
@@ -66,4 +66,3 @@ export const Contact = () => {
     </section>
   );
 };
-
