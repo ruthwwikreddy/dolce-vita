@@ -1,4 +1,5 @@
-import { Instagram, MapPin } from "lucide-react";
+
+import { Instagram, MapPin, Phone, Mail } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -28,7 +29,15 @@ export const Contact = () => {
               <div className="space-y-4">
                 <p className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">Kothapet, Hyderabad</span>
+                  <span className="text-muted-foreground">Hyderabad Location</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Phone className="w-5 h-5 text-primary" />
+                  <span className="text-muted-foreground">+91 XXXXXXXXXX</span>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Mail className="w-5 h-5 text-primary" />
+                  <span className="text-muted-foreground">info@dolcevita.com</span>
                 </p>
                 <a
                   href="https://www.instagram.com/dolce.vita_d/"
